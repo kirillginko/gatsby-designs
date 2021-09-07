@@ -1,0 +1,22 @@
+.secondary-cursor {
+  z-index: 1000;
+  border-radius: 50%;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  border: 1px solid rgb(255, 255, 255);
+  opacity: 1;
+  transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
+
+  &.small {
+    width: 60px;
+    height: 60px;
+  }
+
+  &.hide {
+    width: 0px;
+    height: 0px;
+    transform-origin: center;
+  }
+}
